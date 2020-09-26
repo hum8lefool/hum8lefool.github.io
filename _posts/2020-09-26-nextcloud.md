@@ -1,5 +1,5 @@
 ---
-title: Install Nextcloud on Ubuntu Server 20.04.1 LTS on Raspberry Pi 4
+title: Self-hosted low-cost cloud solution with Nextcloud on Ubuntu Server 20.04.1 LTS on Raspberry Pi 4
 ---
 
 Tons and tons of personal data is being uploaded, stored, used (misused) on daily basis by organizations and companies around the globe. With looming ban on TikTok over privacy concern and earlier accounts of similar concern with other companies like Facebook, I wondered whether companies will take care of my personal data while monetizing their business models which is obvious for their survival.
