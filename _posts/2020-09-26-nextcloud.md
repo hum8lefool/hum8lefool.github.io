@@ -14,7 +14,7 @@ Nextcloud is self-hosted productivity platform that puts your data under your co
 
 This guide shows how I installed Nextcloud on Ubuntu Linux server 20.04.1 with Apache as the web server and MariaDB as database software. For installing Ubuntu on Raspberry Pi 4, you can follow this [tutorial](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview) on Ubuntu's official website.
 
-## STEP-1: INSTALL LAMP STACK IN UBUNTU (LINUX, APACHE, MARIA DB, PHP)
+## INSTALL LAMP STACK IN UBUNTU (LINUX, APACHE, MARIA DB, PHP)
 
 ### 1. Install LAMP Stack
 
@@ -51,7 +51,7 @@ Then answer the following questions when prompted (set a strong and secure root 
 `Remove test database and access to it? [Y/n] y`\
 `Reload privilege tables now? [Y/n] y`
 
-## STEP-2: INSTALL NEXTCLOUD IN UBUNTU
+## INSTALL NEXTCLOUD IN UBUNTU
 
 #### 1. Create database and database user for Nextcloud
 
@@ -85,7 +85,7 @@ Copy the extracted nextcloud directory/folder into your web server’s document 
 Set appropriate ownership on the nextcloud directory:\
 `$ sudo chown -R www-data:www-data /var/www/html/nextcloud`
 
-## STEP-3: CONFIGURE APACHE TO SERVE NEXTCLOUD
+## CONFIGURE APACHE TO SERVE NEXTCLOUD
 
 #### 1. Create an Apache configuration file for Nextcloud under the /etc/apache2/sites-available directory.
 
@@ -127,7 +127,7 @@ Alias /nextcloud "/var/www/html/nextcloud/"
 
 `$ sudo reboot`
 
-## STEP-4: COMPLETE NEXTCLOUD INSTALLATION VIA GRAPHICAL WIZARD
+## COMPLETE NEXTCLOUD INSTALLATION VIA GRAPHICAL USER INTERFACE
 
 #### 1. Open your browser and point it to the following address:
 
