@@ -1,6 +1,18 @@
 ---
-title: Install Nextcloud in Ubuntu Server 20.04.1 LTS on Raspberry Pi 4
+title: Install Nextcloud on Ubuntu Server 20.04.1 LTS on Raspberry Pi 4
 ---
+
+Tons and tons of personal data is being uploaded, stored, used (misused) on daily basis by organizations and companies around the globe. With looming ban on TikTok over privacy concern and earlier accounts of similar concern with other companies like Facebook, I wondered whether companies will take care of my personal data while monetizing their business models which is obvious for their survival.
+
+***"When something online is free, you're not the customer, you're the product"* - Jonathan Zittrain**
+
+While it is not practically possible (unless you go off the grid) to completely avoid sharing your data with tech companies, one can at least minimize it. Person's data is his own responsibility too and it's up to us how much we are willing to share with the world.
+
+I decided to take things in my own hand. So I bought Raspberry Pi 4 and ran Ubuntu Server 20.04.1 on it with goal of setting up _Nextcloud_ instance as personal cloud for my data.
+
+Nextcloud is self-hosted productivity platform that puts your data under your control. It can store documents, calendar, contacts and photos on a server at home, at one of their providers or in a data center you trust.
+
+This guide shows how I installed Nextcloud on Ubuntu Linux server 20.04.1 with Apache as the web server and MariaDB as database software. For installing Ubuntu on Raspberry Pi 4, you can follow this [tutorial](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview) on Ubuntu's official website.
 
 ## STEP-1: INSTALL LAMP STACK IN UBUNTU (LINUX, APACHE, MARIA DB, PHP)
 
