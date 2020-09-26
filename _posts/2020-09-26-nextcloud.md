@@ -1,14 +1,12 @@
 ---
-title: Install Nextcloud in Ubuntu server 20.04.1 LTS on Raspberry Pi 4
----
-published: true
+title: Install Nextcloud in Ubuntu Server 20.04.1 LTS on Raspberry Pi 4
 ---
 
 ## STEP-1: INSTALL LAMP STACK IN UBUNTU (LINUX, APACHE, MARIA DB, PHP)
 
 ### 1. Install LAMP Stack
 
-`$ sudo apt update`
+`$ sudo apt update && sudo apt upgrade`
 
 `$ sudo apt-get install apache2 mariadb-server libapache2-mod-php7.4 php7.4-gd php7.4-json php7.4-mysql php7.4-curl php7.4-mbstring php7.4-intl php-imagick php7.4-xml php7.4-zip`
 
