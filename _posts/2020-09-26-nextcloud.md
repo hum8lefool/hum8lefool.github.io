@@ -22,7 +22,7 @@ This guide shows how I installed Nextcloud on Ubuntu Linux server 20.04.1 with A
 
 `$ sudo apt-get install apache2 mariadb-server libapache2-mod-php7.4 php7.4-gd php7.4-json php7.4-mysql php7.4-curl php7.4-mbstring php7.4-intl php-imagick php7.4-xml php7.4-zip`
 
-**Note: Update the version of PHP for current applicable version. At the time of writing these instructions PHP 7.4 version was applicable.**
+**Note: Update the version of PHP for current applicable version. At the time of writing these instructions, PHP 7.4 version was applicable.**
 
 #### 2. Check if services are started and enabled
 
@@ -69,9 +69,9 @@ Run following sql commands:
 
 #### 2. Download Nextcloud server with wget
 
-`$ sudo wget -c https://download.nextcloud.com/server/releases/nextcloud-18.0.0.zip`
+`$ sudo wget -c https://download.nextcloud.com/server/releases/nextcloud-19.0.3.zip`
 
-**Note: Update the release version with current one. At the time of writing these instructions version 18.0.0 was applicable. You can check current version at https://www.nextcloud.com/install**
+**Note: Update the release version with current one. At the time of writing these instructions version 19.0.3 was applicable. You can check current version at https://www.nextcloud.com/install**
 
 #### 3. Setup nextcloud directory
 
