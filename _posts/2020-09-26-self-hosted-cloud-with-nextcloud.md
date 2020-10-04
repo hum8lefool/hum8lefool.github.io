@@ -1,6 +1,5 @@
 ---
-title: Low-cost self-hosted cloud with Nextcloud on Ubuntu Server 20.04.1 LTS on Raspberry Pi 4
----
+title: Self-hosted cloud with Nextcloud on Ubuntu Server 20.04.1 LTS running on Raspberry Pi 4
 category: technology
 ---
 
