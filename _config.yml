@@ -16,16 +16,16 @@ defaults:
     values:
       layout: "post"
 
-# projects:
-  # sort_by: stars
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  # limit: 9
-  # exclude:
-    # archived: false
-    # forks: true
-    # projects:
+projects:
+  sort_by: stars
+  sort_by options:
+    - pushed
+    - stars
+  limit: 9
+  exclude:
+    archived: false
+    forks: true
+    projects:
     # - repo-name
 
 # social_media:
