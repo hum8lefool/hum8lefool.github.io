@@ -57,3 +57,4 @@ topics:
 
   - name: Machine Learning
     web_url: https://github.com/topics/machine-learning
+    image_url: /assets/ml.png
