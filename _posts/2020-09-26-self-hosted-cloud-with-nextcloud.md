@@ -1,12 +1,13 @@
 ---
 title: Self-hosted cloud with Nextcloud on Ubuntu Server 20.04.1 LTS running on Raspberry Pi 4
 category: technology
+excerpt_separator: <!--more-->
 ---
 
-Tons and tons of personal data is being uploaded, stored, used (misused) on daily basis by organizations and companies around the globe. With looming ban on TikTok over privacy concern and earlier accounts of similar concern with other companies like Facebook, I wondered whether companies will take care of my personal data while monetizing their business models which is obvious for their survival.
+Tons and tons of personal data is being uploaded, stored, used (misused) on daily basis by individuals, organizations or companies around the globe. With looming ban on TikTok over privacy concern and earlier accounts of similar concern with other companies like Facebook, I wondered whether companies will take care of my personal data while monetizing their business models which is obvious for their survival.
 
 ***"When something online is free, you're not the customer, you're the product"* - Jonathan Zittrain**
-
+<!--more-->
 While it is not practically possible (unless you go off the grid) to completely avoid sharing your data with tech companies, one can at least minimize it. Person's data is his own responsibility too and it's up to us how much we are willing to share with the world.
 
 I decided to take things in my own hand. So I bought Raspberry Pi 4 and ran Ubuntu Server 20.04.1 on it with goal of setting up _Nextcloud_ instance as personal cloud for my data.
@@ -23,7 +24,7 @@ This guide shows how I installed Nextcloud on Ubuntu Linux server 20.04.1 with A
 
 `$ sudo apt-get install apache2 mariadb-server libapache2-mod-php7.4 php7.4-gd php7.4-json php7.4-mysql php7.4-curl php7.4-mbstring php7.4-intl php-imagick php7.4-xml php7.4-zip`
 
-**Note: Update the version of PHP for current applicable version. At the time of writing these instructions, PHP 7.4 version was applicable.**
+**Note: Update the version of PHP to latest version. At the time of writing these instructions, PHP 7.4 version was latest.**
 
 #### 2. Check if services are started and enabled
 
@@ -62,10 +63,15 @@ Login to Maria DB server to access the MySQL shell:
 
 Run following sql commands:
 
+Create a database named *nextcloud*:\
 `MariaDB [(none)]> CREATE DATABASE nextcloud;`\
+Create a user named *ncadmin@localhost* and set *your_password*:\
 `MariaDB [(none)]> CREATE USER ncadmin@localhost IDENTIFIED BY 'YOUR_PASSWORD';`\
+Grant all privileges to this user to access newly created database *nextcloud*:\
 `MariaDB [(none)]> GRANT ALL PRIVILEGES ON nextcloud.* TO ncadmin@localhost IDENTIFIED BY 'YOUR_PASSWORD';`\
+Flush/refresh privileges:\
 `MariaDB [(none)]> FLUSH PRIVILEGES;`\
+Exir Maria DB server prompt:\
 `MariaDB [(none)]> EXIT;`
 
 #### 2. Download Nextcloud server with wget
